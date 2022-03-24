@@ -1,0 +1,129 @@
+C:\Users\vrush>npm install -g @angular/cli
+
+added 191 packages, and audited 192 packages in 16s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\vrush>ng version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 13.3.0
+Node: 16.14.0
+Package Manager: npm 8.3.1
+OS: win32 x64
+
+Angular: undefined
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1303.0 (cli-only)
+@angular-devkit/core         13.3.0 (cli-only)
+@angular-devkit/schematics   13.3.0 (cli-only)
+@schematics/angular          13.3.0 (cli-only)
+
+Starting "default"...
+(default) Waiting for an IP...
+Machine "default" was started.
+Waiting for SSH to be available...
+Detecting the provisioner...
+Started machines may have new IP addresses. You may need to re-run the `docker-machine env` command.
+Regenerate TLS machine certs?  Warning: this is irreversible. (y/n): Regenerating TLS certificates
+Waiting for SSH to be available...
+Detecting the provisioner...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+
+This machine has been allocated an IP address, but Docker Machine could not
+reach it successfully.
+
+SSH for the machine should still work, but connecting to exposed ports, such as
+the Docker daemon port (usually <ip>:2376), may not work properly.
+
+You may need to add the route manually, or use another related workaround.
+
+This could be due to a VPN, proxy, or host file configuration issue.
+
+You also might want to clear any VirtualBox host only interfaces you are not using.
+
+
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+
+
+Start interactive shell
+
+vrush@LAPTOP-PSDVQHIL MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+<none>                 <none>              ce6e184bfc78        20 hours ago        107MB
+express                latest              6f8b64208228        21 hours ago        184MB
+python                 latest              03ef5b5a30a4        5 days ago          919MB
+ubuntu                 20.04               ff0fea8310f3        6 days ago          72.8MB
+ubuntu                 latest              ff0fea8310f3        6 days ago          72.8MB
+node-docker-tutorial   latest              9563e47c43f8        4 weeks ago         189MB
+mysql                  latest              17b062d639f4        4 weeks ago         519MB
+postgres               latest              6a3c44872108        5 weeks ago         374MB
+mongo                  latest              5285cb69ea55        7 weeks ago         698MB
+ubuntu                 <none>              54c9d81cbb44        7 weeks ago         72.8MB
+nginx                  latest              c316d5a335a5        8 weeks ago         142MB
+hello-world            latest              feb5d9fea6a5        6 months ago        13.3kB
+node                   9-slim              e20bb4abe4ee        3 years ago         182MB
+java                   latest              d23bdf5b1b1b        5 years ago         643MB
+
+vrush@LAPTOP-PSDVQHIL MINGW64 /c/Program Files/Docker Toolbox
+$ docker pull alexsuch/angular-cli
+Using default tag: latest
+latest: Pulling from alexsuch/angular-cli
+6a428f9f83b0: Pull complete
+117b1bf70a74: Pull complete
+a19603468f90: Pull complete
+1d2672489abb: Pull complete
+f28ec11af5ca: Pull complete
+5db9ba71c5cb: Pull complete
+Digest: sha256:0fe9a5b83b7705e41fa443de2aab599531b75f1df1e0f0518eb84a98ff7b56cb
+Status: Downloaded newer image for alexsuch/angular-cli:latest
+docker.io/alexsuch/angular-cli:latest
+
+vrush@LAPTOP-PSDVQHIL MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+<none>                 <none>              ce6e184bfc78        20 hours ago        107MB
+express                latest              6f8b64208228        21 hours ago        184MB
+python                 latest              03ef5b5a30a4        5 days ago          919MB
+ubuntu                 20.04               ff0fea8310f3        6 days ago          72.8MB
+ubuntu                 latest              ff0fea8310f3        6 days ago          72.8MB
+alexsuch/angular-cli   latest              6384082bfa7a        2 weeks ago         154MB
+node-docker-tutorial   latest              9563e47c43f8        4 weeks ago         189MB
+mysql                  latest              17b062d639f4        4 weeks ago         519MB
+postgres               latest              6a3c44872108        5 weeks ago         374MB
+mongo                  latest              5285cb69ea55        7 weeks ago         698MB
+ubuntu                 <none>              54c9d81cbb44        7 weeks ago         72.8MB
+nginx                  latest              c316d5a335a5        8 weeks ago         142MB
+hello-world            latest              feb5d9fea6a5        6 months ago        13.3kB
+node                   9-slim              e20bb4abe4ee        3 years ago         182MB
+java                   latest              d23bdf5b1b1b        5 years ago         643MB
+
+vrush@LAPTOP-PSDVQHIL MINGW64 /c/Program Files/Docker Toolbox
+$
